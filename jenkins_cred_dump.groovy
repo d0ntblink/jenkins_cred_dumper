@@ -25,7 +25,7 @@ for(c in creds){
                 c.username, 
                 c.password))
         } catch (Exception e) {
-
+            println(String.format("\n"))
         }
     }
     else if (c.toString().contains("BasicSSHUserPrivateKey")){
