@@ -30,11 +30,11 @@ for(c in creds){
     }
     else if (c.toString().contains("BasicSSHUserPrivateKey")){
         try{
-            println(String.format("id=%s\n passphrase=%s\n username=%s\n", 
-                c.id, 
-                // c.description,  
+            println(String.format("id=%s\n username=%s\n privateKey=%s\n", 
+                c.id,
                 c.username,
-                c.passphrase))
+                // c.description, 
+                c.privateKey))
         } catch (Exception e) {
             println(String.format("\n"))
         }
